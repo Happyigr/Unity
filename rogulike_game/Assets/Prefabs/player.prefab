@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1218279905452016170}
   - component: {fileID: 1218279905452016169}
   - component: {fileID: 1218279905452016174}
+  - component: {fileID: 689812842}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02840519, y: 0}
+  m_Offset: {x: 0.04122311, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48870683, y: 0.70783246}
+  m_Size: {x: 0.463071, y: 0.6437429}
   m_EdgeRadius: 0
 --- !u!95 &1218279905452016170
 Animator:
@@ -159,8 +160,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  HitRate: 2
   SwordPrefab: {fileID: 8869683687926778348}
+  AttackPerSecond: 2
+  RangeOfAttack: 0.43
+  AttackPoint: {fileID: 7173129672943900170}
+  EnemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &689812842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218279905452016164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f110e993e85b6d241ba4737b4a5a4c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5249986461779236902
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5249986461779236902}
   m_LocalRotation: {x: -0, y: -0, z: 0.014253912, w: 0.99989843}
-  m_LocalPosition: {x: 0.84016496, y: -0.01184532, z: 0}
+  m_LocalPosition: {x: 0.697, y: -0.016, z: 0}
   m_LocalScale: {x: 0.54756993, y: 0.54756993, z: 0.54757}
   m_Children: []
   m_Father: {fileID: 1218279905452016175}
