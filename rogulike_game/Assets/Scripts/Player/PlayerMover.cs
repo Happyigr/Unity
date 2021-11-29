@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     // main settings
-    public int moveSpeed; // players movement speed
+    public int ForcePower; // players movement speed
 
     // parametrs of player
     private Vector3 moveVector;
@@ -14,13 +14,15 @@ public class PlayerMover : MonoBehaviour
 
     // link to components
     private Animator animtor; // players animator
+    private Rigidbody2D playersRigid; // players rigidbody
 
     private void Start()
     {
         animtor = gameObject.GetComponent<Animator>();
+        playersRigid = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         // characters move directions
         moveVector.x = Input.GetAxis("Horizontal");
@@ -44,8 +46,10 @@ public class PlayerMover : MonoBehaviour
             xFlip();
         }
 
+        // stop all forces, that control the object
+        playersRigid.velocity = new Vector2(0, 0);
         // moving a player
-        transform.position += (moveVector * moveSpeed * Time.deltaTime);
+        playersRigid.AddForce(moveVector * ForcePower);
 
     }
 
