@@ -10,7 +10,6 @@ public class PlayerMover : MonoBehaviour
 
     // parametrs of player
     private Vector3 moveVector;
-    private bool isRightRunning = true;
 
     // link to components
     private Animator animtor; // players animator
@@ -34,16 +33,7 @@ public class PlayerMover : MonoBehaviour
         }
         else
         {
-            animtor.SetBool("isRunning", false);        }
-
-        // flipping a player if player is running in the other direction
-        if (moveVector.x > 0 && !isRightRunning)
-        {
-            xFlip();
-        }
-        else if (moveVector.x < 0 && isRightRunning)
-        {
-            xFlip();
+            animtor.SetBool("isRunning", false);        
         }
 
         // stop all forces, that control the object
@@ -51,18 +41,5 @@ public class PlayerMover : MonoBehaviour
         // moving a player
         playersRigid.AddForce(moveVector * ForcePower);
 
-    }
-
-    // player's assets flip method
-    private void xFlip()
-    {
-        // switch a bool with direction of player
-        isRightRunning = !isRightRunning;
-        // getting a size of player
-        Vector3 theScale = transform.localScale;
-        // mirroring a player for axis x
-        theScale.x *= -1;
-        // assign a mirrored picture of player
-        transform.localScale = theScale;
     }
 }

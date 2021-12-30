@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 7868557253156798547}
   - component: {fileID: 1585777189500830832}
   - component: {fileID: 473199128}
+  - component: {fileID: 1447356896424150369}
   m_Layer: 6
   m_Name: enemyGoblinPrefab
   m_TagString: Untagged
@@ -181,3 +182,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1447356896424150369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2407336071506502768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04090c7359bd8484c807a810e18e6427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
