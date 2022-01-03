@@ -5,18 +5,21 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
     // public things
-    public Map[] Maps;
+    public Room[] Maps;
     public BreakbleObject[] BreakbleObjectsPrefabs;
     public Chest[] ChestsPrefabs;
     public Mob[] MobsPrefabs;
 
-    private Map currentMap;
+    private Room _currentMap;
 
-    public void SolveMap()
+    public void SolveLevelMap()
     {
-
+        _MapInit();
     }
 
-
+    private void _MapInit()
+    {
+        _currentMap.StartRoom(BreakbleObjectsPrefabs, ChestsPrefabs, MobsPrefabs);
+    }
 }
 
