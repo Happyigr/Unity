@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
-    public MapManager MapManager;
+    public MapSolver MapManager;
 
 
 }

@@ -5,12 +5,9 @@ using UnityEngine;
 public class PlayerCollisionCheck : MonoBehaviour
 {
 
-    // check colliders
-    private void OnCollisionEnter2D(Collision2D collision)
+    // checking entered collisions
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Walls"))
-        {
-            Debug.Log("enter");
-        }
+            
     }
-}
+}   

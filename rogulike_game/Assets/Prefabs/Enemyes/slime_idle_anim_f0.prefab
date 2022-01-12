@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4137461865631441463}
   - component: {fileID: 7882292543082532350}
   - component: {fileID: 2743761450770512943}
+  - component: {fileID: 3036772647864930443}
+  - component: {fileID: 5743508681081663879}
   m_Layer: 6
   m_Name: slime_idle_anim_f0
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064522630835886838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.609631, y: -0.45378292, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,3 +97,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04090c7359bd8484c807a810e18e6427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &3036772647864930443
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064522630835886838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011612624, y: -0.023225337}
+  serializedVersion: 2
+  m_Radius: 0.4506463
+--- !u!50 &5743508681081663879
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064522630835886838}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
