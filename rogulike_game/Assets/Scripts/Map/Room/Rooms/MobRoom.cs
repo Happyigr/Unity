@@ -26,7 +26,7 @@ public class MobRoom : Room
 
     private void StartRoom()
     {
-        Spawner.Spawn();
+        //Spawner.Spawn(); 
 
         RoomZone.SetActive(false);
 

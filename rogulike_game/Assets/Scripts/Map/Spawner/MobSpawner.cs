@@ -6,7 +6,6 @@ public class MobSpawner : Spawner
 {
     public BreakbleObject[] BreakbleObjectsPrefabs;
     public Mob[] MobsPrefabs;
-    public GameObject Container;
     public int amount;
     public float MobSpawnRangeX; // In tiles amount
     public float MobSpawnRangeY;
